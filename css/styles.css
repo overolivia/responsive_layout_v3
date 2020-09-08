@@ -165,6 +165,9 @@ footer h2 {
 		background: #fff;
 	}
 	
+	/* navigation + banner*/
+	
+	
 	.main-nav {
 		margin: 0 auto;
 		text-align: center;
@@ -181,6 +184,14 @@ footer h2 {
 		float: right;
 		margin: 0 1.5em;
 	}
+	
+	.banner p {
+		
+		text-align: left;
+	}
+	
+	/*main content floats*/
+	
 	
 	
 	.portfolio-1 {
@@ -233,9 +244,78 @@ footer h2 {
 
 @media (min-width: 1024px) {
 	
+	/*banner/header*/
+	
+	.main-header {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+	}
+	
+	.banner {
+		padding-top: 145px;
+	}
+	
+	/*navigation*/
+	
+	.main-nav {
+		float: right;
+		padding: 2em;
+	}
+	
+	.name {
+		
+		float: left;
+		padding-left: 1em;
+	}
+	
+	/*main content*/
+	
+	.portfolio-1 {
+		float: left;
+		width: 33%;
+	}
+	
+	.portfolio-2 {
+		float: none;
+		width: 33%;
+	}
+	
+	.portfolio-3 {
+		float: right;
+		width: 33%;
+	}
+	
+	.portfolio-4 {
+		float: left;
+		width: 33%;
+	}
+	
+	.portfolio-5 {
+		float: none;
+		width: 33%;
+	}
+	
+	.portfolio-6 {
+		float: right;
+		width: 33%;
+		position: absolute;
+	}
 	
 	
+	
+	/*float clearfix*/
+	
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	
+	}
 }
+	
+	
 
 
 
